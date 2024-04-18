@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AnimalsSuccessScreen">
+
+    <LinearLayout
+        android:id="@+id/header_animal_success"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green_btn"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/back_icon"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="15dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            android:fontFamily="@font/fredoka"
+            android:padding="7dp"
+            android:text="Guess the animal"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tView_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🎉"
+        android:textSize="150sp"
+        android:layout_marginVertical="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_animal_success"/>
+
+    <TextView
+        android:id="@+id/text_holy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Holy Molly! That is Right!"
+        android:textSize="20sp"
+        android:layout_marginVertical="15dp"
+        android:fontFamily="@font/fredoka"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tView_success"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_next_quest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue_btn"
+        android:fontFamily="@font/fredoka"
+        android:layout_marginVertical="35dp"
+        android:layout_marginHorizontal="25dp"
+        android:padding="15dp"
+        android:text="Next"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/text_holy" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

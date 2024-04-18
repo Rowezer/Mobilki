@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    tools:context=".userPackage.ResizePhotoScreen">
+
+    <LinearLayout
+        android:id="@+id/header_resize_photo"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@color/primary_color"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your photo is gorgeous"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="20dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/fredoka" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Just resize that photo \nfor fit in square"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="15dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/header_resize_photo"
+        android:fontFamily="@font/fredoka" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_resize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_use_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue_btn"
+        android:fontFamily="@font/fredoka"
+        android:layout_marginVertical="25dp"
+        android:layout_marginHorizontal="25dp"
+        android:padding="15dp"
+        android:text="Use that image"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue_btn">#5B7BFE</color>
+    <color name="pink_btn">#D6185D</color>
+    <color name="orange_btn">#F76400</color>
+    <color name="green_btn">#5BA890</color>
+    <color name="primary_color">#410FA3</color>
+    <color name="item_background">#FFF6EB</color>
+    <color name="item_chose_background">#F76400</color>
+    <color name="card_gray_background">#E5E5E5</color>
+    <color name="gray_background">#41E5E5E5</color>
+    <color name="red_logout">#C1FF3410</color>
+    <color name="gray_avatar">#D9D9D9</color>
+    <color name="record_button">#00B5AE</color>
+    <color name="color_avatar">#5BA890</color>
+    <color name="dark_background">#080E1E</color>
+
+</resources>
